@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <section id="main_sec">
+
+        <h1 id="main_hdng">
+            TO-DO-LIST
+        </h1>
+
+        <div id="input_div">
+
+            <input id="user_input" type="text" placeholder="Write Something...">
+
+            <div id="btn_div">
+                <button type="button" class="btn btn-primary" id="add_item" onclick="addItem()">Add Task</button>
+
+                <button type="button" class="btn btn-danger" id="delete_all" onclick="deleteAll()">Delete All</button>
+
+            </div>
+        </div>
+
+        <div id="list_div">
+
+            <ul id="list_container">
+                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae minus dignissimos error aliquam atque
+                molestias perferendis. Dicta, praesentium veritatis fuga nostrum architecto doloribus commodi quasi, eos
+                blanditiis quos id reiciendis! -->
+            </ul>
+
+        </div>
+
+    </section>
+
+    <div id="msg_div">
+        <span id="message"></span>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
